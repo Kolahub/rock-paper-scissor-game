@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70rem;
+    padding: 1rem;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid $blue-gray;
+    border-radius: 1rem;
+
+    &--itemOne {
+
+        &__text {
+            margin: 0;
+            font-size: 3rem;
+            color: $color-white;
+            line-height: 2.8rem;
+            text-transform: uppercase;
+
+        }
+    }
+
+    &--itemTwo { 
+        background-color: $color-white;
+        width: 15rem;
+        border-radius: 1rem;
+        text-align: center;
+        &__text {
+            color: $blue;
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        &__subText {
+            color: $blue-gray;
+            display: block;
+            font-size:7rem;
+            margin-top: -1rem;
+        }
+    }
+}

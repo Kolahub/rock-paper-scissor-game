@@ -1,0 +1,47 @@
+.play {
+
+    &__bg {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__scissor {
+        background-color: $color-white;
+        width: 10rem;
+        height: 10rem;
+        text-align: center;
+        border-radius: 50%;
+        background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(30deg,hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
+        border: 2rem solid transparent;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &--pic{
+            margin-top: 2rem;
+        }
+    }
+
+    &__paper {
+        background-color: $color-white;
+        width: 10rem;
+        height: 10rem;
+        text-align: center;
+        border-radius: 50%;
+        background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(30deg,hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
+        border: 2rem solid transparent;
+        position: absolute;
+        top: 58%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+
+        &--pic{
+            margin-top: 2rem;
+        }
+    }
+}
