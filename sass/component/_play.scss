@@ -1,45 +1,75 @@
 .play {
 
     &__bg {
-        position: absolute;
-        top: 60%;
+        position: relative;
+        // background-color: aqua;
+        width: 35rem;
+        text-align: center;
+        bottom: -45rem;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    &__scissor {
-        background-color: $color-white;
+    &--pentagon {
+        width: 35rem;
+    }
+    &__component {
         width: 10rem;
         height: 10rem;
         text-align: center;
         border-radius: 50%;
-        background: linear-gradient(#fff, #fff) padding-box,
-        linear-gradient(30deg,hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
         border: 2rem solid transparent;
         position: absolute;
-        top: 40%;
-        left: 50%;
         transform: translate(-50%, -50%);
-
+    }
+    &__scissor {
+        background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(30deg,hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
+        top: 5%;
+        left: 50%;
         &--pic{
             margin-top: 2rem;
         }
     }
 
     &__paper {
-        background-color: $color-white;
-        width: 10rem;
-        height: 10rem;
-        text-align: center;
-        border-radius: 50%;
         background: linear-gradient(#fff, #fff) padding-box,
         linear-gradient(30deg,hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
         border: 2rem solid transparent;
-        position: absolute;
-        top: 58%;
-        left: 60%;
-        transform: translate(-50%, -50%);
+        top: 45%;
+        left: 96%;
+        &--pic{
+            margin-top: 2rem;
+        }
+    }
 
+    &__rock {
+        background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box;
+        border: 2rem solid transparent;
+        top: 95%;
+        left: 75%;
+        &--pic{
+            margin-top: 2rem;
+        }
+    }
+
+    &__lizard {
+        background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient( hsl(261, 73%, 60%), hsl(261, 72%, 63%)) border-box;
+        border: 2rem solid transparent;
+        top: 95%;
+        left: 20%;
+        &--pic{
+            margin-top: 2rem;
+        }
+    }
+
+    &__spock {
+        background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%)) border-box;
+        border: 2rem solid transparent;
+        top: 42%;
+        left: 3%;
         &--pic{
             margin-top: 2rem;
         }

@@ -1,0 +1,104 @@
+.result {
+
+    &__heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 75rem;
+        font-size: 2rem;
+        color: $color-white;
+        text-transform: uppercase;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__choice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 75rem;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        &--you {
+            position: absolute;
+            top: 55%;
+            left: 10%;
+            width: 20rem;
+            height: 20rem;
+            text-align: center;
+            border-radius: 50%;
+            border: 3rem solid transparent;
+            transform: translate(-50%, -50%);
+            margin-top: 4rem;
+
+            &__pic {
+                margin-top: 5rem;
+                width: 8.5rem;
+            }
+        }
+
+        &--house {
+            width: 20rem;
+            height: 20rem;
+            position: absolute;
+            top: 55%;
+            left: 80%;
+            background-color: rgba(black, .5);
+            border-radius: 50%;
+
+            position: absolute;
+            top: 55%;
+            left: 90%;
+            width: 20rem;
+            height: 20rem;
+            text-align: center;
+            border-radius: 50%;
+            border: 3rem solid transparent;
+            transform: translate(-50%, -50%);
+            margin-top: 4rem;
+
+            &__pic {
+                margin-top: 5rem;
+                width: 8.5rem;
+            }
+        }
+
+    }
+
+    &__decision {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &--text {
+            font-size: 3rem;
+            color: $color-white;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        &--btn {
+            width: 22rem;
+            height: 3.5rem;
+            border: none;
+            border-radius: 1rem;
+            color: $blue;
+            text-transform: uppercase;
+            font-weight: 550;
+            margin: 0;
+
+            &:hover {
+                color: rgb(220, 35, 35);
+            }
+        }
+    }
+}

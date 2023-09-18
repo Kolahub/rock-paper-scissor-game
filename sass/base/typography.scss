@@ -6,3 +6,28 @@ body {
     background-image: linear-gradient(to bottom right, $dark-blue-two, $dark-blue-three);
     min-height: 100vh;
 }
+
+.hidden {
+    display: none;
+}
+
+.scissor {
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(30deg,hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box !important;
+}
+.paper {
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(30deg,hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box !important;
+}
+.rock {
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box !important;
+}
+.lizard {
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient( hsl(261, 73%, 60%), hsl(261, 72%, 63%)) border-box !important;
+}
+.spock {
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%)) border-box !important;
+}

@@ -24,7 +24,7 @@
     </div>
 
     <div class="header--itemTwo">
-      <p class="header--itemTwo__text">score <span class="header--itemTwo__subText">0</span></p>
+      <p class="header--itemTwo__text">score <span class="header--itemTwo__subText score">0</span></p>
     </div>
   </header>
 
@@ -33,16 +33,77 @@
       <div class="play">
         <div class="play__bg">
           <img src="images/bg-pentagon.svg" alt="bg-pentagon-pic" class="play--pentagon">
+
+          <div class="play__scissor play__component">
+            <img src="images/icon-1.svg" alt="scissor--pic" class="play__scissor--pic">
+          </div>
+          <div class="play__paper  play__component">
+            <img src="images/icon-2.svg" alt="paper--pic" class="play__paper--pic">
+          </div>
+
+          <div class="play__rock  play__component">
+            <img src="images/icon-3.svg" alt="rock-pic" class="play__rock--pic">
+          </div>
+
+          <div class="play__lizard  play__component">
+            <img src="images/icon-4.svg" alt="lizard-pic" class="play__lizard--pic">
+          </div>
+
+          <div class="play__spock  play__component">
+            <img src="images/icon-5.svg" alt="spock-pic" class="play__spock--pic">
+          </div>
         </div>
-        <div class="play__scissor">
-          <img src="images/icon-scissors.svg" alt="" class="play__scissor--pic">
+      </div>
+    </section>
+
+    <div class="result__section hidden">
+      <div class="result">
+        <div class="result__heading">
+          <div class="result__heading--you">
+            you picked
+          </div>
+          <div class="result__heading--you">
+            the house picked
+          </div>
         </div>
-        <div class="play__paper">
-          <img src="images/icon-paper.svg" alt="" class="play__paper--pic">
+        <div class="result__choice">
+          <div class="result__choice--you">
+              <img src="images/icon-1.svg" alt="scissor--pic" class="result__scissor--pic result__choice--you__pic">
+          </div>
+          <div class="result__choice--house">
+            <img src="images/icon-1.svg" alt="scissor--pic" class="result__scissor--pic result__choice--house__pic hidden">
+          </div>
         </div>
-        <!-- <div class="play__scissor">
-          <img src="images/icon-scissors.svg" alt="" class="play__scissor--pic">
-        </div> -->
+
+        <div class="result__decision hidden">
+          <p class="result__decision--text">you <span class="main--result">lose</span></p>
+          <button class="result__decision--btn again">play again</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="rules__section">
+      <div class="rules">
+        <div class="rules--component">
+          <button class="rules--component__btn">rules</button>
+        </div>
+
+        <div class="rules__overlay hidden">
+          <div class="rules--display">
+            <div class="rules--display__heading">
+              <div class="rules--display__heading--text">
+                rules
+              </div>
+              <div class="rules--display__heading--close close">
+                &times;
+              </div>
+            </div>
+  
+            <div class="rules--display__guide">
+              <img src="images/image-rules-bonus.svg" alt="rules-guide" class="rules--display__guide--pic">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -51,5 +112,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Faheez Adekola</a>.
   </div> -->
+
+  <script src="app.js"></script>
 </body>
 </html>
