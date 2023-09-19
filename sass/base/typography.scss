@@ -4,7 +4,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-image: linear-gradient(to bottom right, $dark-blue-two, $dark-blue-three);
-    min-height: 100vh;
+    height: 100vh;
+
+    @include respond(phone) {
+        overflow-x: hidden;
+    }
 }
 
 .hidden {

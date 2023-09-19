@@ -11,6 +11,10 @@
     border: 3px solid $blue-gray;
     border-radius: 1rem;
 
+    @include respond(phone) {
+        width: 40rem;
+      }
+
     &--itemOne {
 
         &__text {

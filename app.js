@@ -20,10 +20,7 @@ const againBtn = document.querySelector('.again')
 let houseChoiceNum = 0;
 let logoRandom = 0
 
-const again = function () {
-    playSec.classList.remove('hidden')
-    resultSec.classList.add('hidden')
-    houseChoiceNum = Math.trunc(Math.random()*5) + 1
+houseChoiceNum = Math.trunc(Math.random()*5) + 1
 console.log(houseChoiceNum)
 if (houseChoiceNum === 1) {
     logoRandom = 'scissor'
@@ -36,8 +33,7 @@ if (houseChoiceNum === 1) {
 } else if (houseChoiceNum === 5) {
     logoRandom = 'spock' 
 }
-}
-again()
+
 
 let score = 0
 scorePoint.textContent = 0
@@ -48,7 +44,7 @@ scissor.addEventListener('click', function () {
     yourChoice.classList.add('scissor')
     logoPicYou.src = `images/icon-${1}.svg`;
 
-    setTimeout(function(){    
+    setTimeout(function() {    
             if (logoRandom === 'paper') {
         mainResult.textContent = 'win'
         score++
@@ -195,4 +191,6 @@ closeBtn.addEventListener('click', function () {
     rulePreview.classList.add('hidden')
 })
 
-againBtn.addEventListener('click',  again)
+againBtn.addEventListener('click',  function(){
+    window.location.reload(false);
+})

@@ -1,5 +1,14 @@
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: inherit; }
@@ -10,7 +19,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-image: linear-gradient(to bottom right, #1f3756, #141539);
-  min-height: 100vh; }
+  height: 100vh; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      overflow-x: hidden; } }
 
 .hidden {
   display: none; }
@@ -37,6 +49,9 @@ body {
   bottom: -45rem;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 37.5em) {
+    .play__bg {
+      bottom: -50rem; } }
 
 .play--pentagon {
   width: 35rem; }
@@ -102,6 +117,9 @@ body {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 37.5em) {
+    .result__heading {
+      width: 45rem; } }
 
 .result__choice {
   display: flex;
@@ -124,9 +142,18 @@ body {
     border: 3rem solid transparent;
     transform: translate(-50%, -50%);
     margin-top: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .result__choice--you {
+        left: 30%;
+        width: 10rem;
+        height: 10rem; } }
     .result__choice--you__pic {
       margin-top: 5rem;
       width: 8.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .result__choice--you__pic {
+          margin-top: 3rem;
+          width: 5rem; } }
   .result__choice--house {
     width: 20rem;
     height: 20rem;
@@ -145,15 +172,27 @@ body {
     border: 3rem solid transparent;
     transform: translate(-50%, -50%);
     margin-top: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .result__choice--house {
+        left: 70%;
+        width: 10rem;
+        height: 10rem; } }
     .result__choice--house__pic {
       margin-top: 5rem;
       width: 8.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .result__choice--house__pic {
+          margin-top: 3rem;
+          width: 5rem; } }
 
 .result__decision {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 37.5em) {
+    .result__decision {
+      top: 80%; } }
   .result__decision--text {
     font-size: 3rem;
     color: white;
@@ -206,6 +245,9 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 1rem;
   padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .rules--display {
+      width: 30rem; } }
   .rules--display__heading {
     display: flex;
     justify-content: space-between;
@@ -219,6 +261,11 @@ body {
       color: #dddcdc;
       text-transform: uppercase;
       cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .rules--display__guide--pic {
+      width: 30rem;
+      height: 30rem;
+      text-align: center; } }
 
 .attribution {
   font-size: 11px;
@@ -239,6 +286,9 @@ body {
   transform: translate(-50%, -50%);
   border: 3px solid #606e85;
   border-radius: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      width: 40rem; } }
   .header--itemOne__text {
     margin: 0;
     font-size: 3rem;

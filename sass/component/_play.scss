@@ -8,6 +8,10 @@
         bottom: -45rem;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include respond(phone) {
+            bottom: -50rem;
+          }
     }
     &--pentagon {
         width: 35rem;
