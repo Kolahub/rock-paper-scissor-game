@@ -7,7 +7,7 @@ body {
     height: 100vh;
 
     @include respond(phone) {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 }
 

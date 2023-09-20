@@ -34,25 +34,38 @@ if (houseChoiceNum === 1) {
     logoRandom = 'spock' 
 }
 
-
 let score = 0
-scorePoint.textContent = 0
+score = localStorage.getItem('value')
+console.log(score)
+scorePoint.textContent = score
+
 
 scissor.addEventListener('click', function () {
     playSec.classList.add('hidden')
     resultSec.classList.remove('hidden')
     yourChoice.classList.add('scissor')
     logoPicYou.src = `images/icon-${1}.svg`;
-
     setTimeout(function() {    
-            if (logoRandom === 'paper') {
+        if (logoRandom === 'paper') {
         mainResult.textContent = 'win'
         score++
+        localStorage.setItem('value', score)
         scorePoint.textContent = score
-    } else {
+        scorePoint.textContent = localStorage.getItem('value')
+        document.querySelector('.ripple').classList.remove('hidden')
+        yourChoice.classList.add('ripple')
+
+    }  else if (logoRandom === 'scissor') {
+        document.querySelector('.result__decision--text').textContent ='drew!'
+    }
+    else {
         mainResult.textContent = 'lose'
         score--
+        localStorage.setItem('value', score)
         scorePoint.textContent = score
+        scorePoint.textContent = localStorage.getItem('value')
+        document.querySelector('.ripple').classList.remove('hidden')
+        houseChoice.classList.add('ripple')
     }
     },2000);
     
@@ -65,7 +78,6 @@ scissor.addEventListener('click', function () {
    setTimeout(function(){  
     decision.classList.remove('hidden')
    },1500);
-
 })
 
 paper.addEventListener('click', function () { 
@@ -78,11 +90,18 @@ paper.addEventListener('click', function () {
         if (logoRandom === 'rock') {
             mainResult.textContent = 'win'
             score++
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
-        } else {
+            scorePoint.textContent = localStorage.getItem('value')
+        } else if (logoRandom === 'paper') {
+            document.querySelector('.result__decision--text').textContent ='drew!'
+        }
+        else {
             mainResult.textContent = 'lose'
             score--
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
+            scorePoint.textContent = localStorage.getItem('value')
         }
     },2000);
 
@@ -107,11 +126,18 @@ rock.addEventListener('click', function () {
         if (logoRandom === 'lizard') {
             mainResult.textContent = 'win'
             score++
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
-        } else {
+            scorePoint.textContent = localStorage.getItem('value')
+        } else if (logoRandom === 'rock') {
+            document.querySelector('.result__decision--text').textContent ='drew!'
+        }
+        else {
             mainResult.textContent = 'lose'
             score--
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
+            scorePoint.textContent = localStorage.getItem('value')
         } 
     },2000);
 
@@ -136,11 +162,18 @@ lizard.addEventListener('click', function () {
         if (logoRandom === 'spock') {
             mainResult.textContent = 'win'
             score++
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
-        } else {
+            scorePoint.textContent = localStorage.getItem('value')
+        } else if (logoRandom === 'lizard') {
+            document.querySelector('.result__decision--text').textContent ='drew!'
+        }
+        else {
             mainResult.textContent = 'lose'
             score--
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
+            scorePoint.textContent = localStorage.getItem('value')
         }
     },2000);
 
@@ -165,11 +198,18 @@ spock.addEventListener('click', function () {
         if (logoRandom === 'scissor') {
             mainResult.textContent = 'win'
             score++
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
-        } else {
+            scorePoint.textContent = localStorage.getItem('value')
+        } else if (logoRandom === 'spock') {
+            document.querySelector('.result__decision--text').textContent ='drew!'
+        }
+        else {
             mainResult.textContent = 'lose'
             score--
+            localStorage.setItem('value', score)
             scorePoint.textContent = score
+            scorePoint.textContent = localStorage.getItem('value')
         }    
     },2000);
 
@@ -192,5 +232,10 @@ closeBtn.addEventListener('click', function () {
 })
 
 againBtn.addEventListener('click',  function(){
-    window.location.reload(false);
+    window.location.reload();
+})
+document.querySelector('.reset--component').addEventListener('click',  function(){
+    localStorage.clear('')
+    localStorage.setItem('value', 0)
+    window.location.reload();
 })
