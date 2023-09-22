@@ -15,7 +15,7 @@
         transform: translate(-50%, -50%);
 
             @include respond(phone) {
-                width: 45rem;
+                width: 40rem;
               }
     }
 
@@ -29,8 +29,9 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-
-
+        @include respond(phone) {
+            width: 45rem;
+          }
         &--you {
             position: absolute;
             top: 55%;
@@ -44,9 +45,10 @@
             margin-top: 4rem;
 
             @include respond(phone) {
-                left: 30%;
+                left: 25%;
                 width: 10rem;
                 height: 10rem;
+                border-width: 2rem;
               }
 
             &__pic {
@@ -81,9 +83,10 @@
             margin-top: 4rem;
 
             @include respond(phone) {
-                left: 70%;
+                left: 75%;
                 width: 10rem;
                 height: 10rem;
+                border-width: 2rem;
               }
 
             &__pic {

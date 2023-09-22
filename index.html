@@ -33,7 +33,6 @@
       <div class="play">
         <div class="play__bg">
           <img src="images/bg-pentagon.svg" alt="bg-pentagon-pic" class="play--pentagon">
-
           <div class="play__scissor play__component">
             <img src="images/icon-1.svg" alt="scissor--pic" class="play__scissor--pic">
           </div>
@@ -67,8 +66,24 @@
           </div>
         </div>
         <div class="result__choice">
+          <div class="rippleBg rippleBg--you hidden">
+            <div class="rippleBg__one">
+            </div>
+            <div class="rippleBg__two">
+            </div>
+            <div class="rippleBg__three">
+            </div>
+          </div>
           <div class="result__choice--you">
               <img src="images/icon-1.svg" alt="scissor--pic" class="result__scissor--pic result__choice--you__pic">
+          </div>
+          <div class="rippleBg rippleBg--house hidden">
+            <div class="rippleBg__one">
+            </div>
+            <div class="rippleBg__two">
+            </div>
+            <div class="rippleBg__three">
+            </div>
           </div>
           <div class="result__choice--house">
             <img src="images/icon-1.svg" alt="scissor--pic" class="result__scissor--pic result__choice--house__pic hidden">
@@ -76,7 +91,7 @@
         </div>
 
         <div class="result__decision hidden">
-          <p class="result__decision--text">you <span class="main--result">lose</span></p>
+          <p class="result__decision--text main--result"></p>
           <button class="result__decision--btn again">play again</button>
         </div>
       </div>
@@ -114,7 +129,7 @@
     </div>
 
   </main>
-  
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Faheez Adekola</a>.

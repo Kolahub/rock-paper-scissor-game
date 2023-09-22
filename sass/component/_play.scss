@@ -1,17 +1,12 @@
 .play {
 
     &__bg {
-        position: relative;
-        // background-color: aqua;
+        position: absolute;
         width: 35rem;
         text-align: center;
-        bottom: -45rem;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-
-        @include respond(phone) {
-            bottom: -50rem;
-          }
     }
     &--pentagon {
         width: 35rem;

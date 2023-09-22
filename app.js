@@ -16,6 +16,8 @@ const ruleBtn = document.querySelector('.rules--component')
 const rulePreview = document.querySelector('.rules__overlay')
 const closeBtn = document.querySelector('.close')
 const againBtn = document.querySelector('.again')
+const youRipple = document.querySelector('.rippleBg--you')
+const houseRipple = document.querySelector('.rippleBg--house')
 
 let houseChoiceNum = 0;
 let logoRandom = 0
@@ -47,25 +49,22 @@ scissor.addEventListener('click', function () {
     logoPicYou.src = `images/icon-${1}.svg`;
     setTimeout(function() {    
         if (logoRandom === 'paper') {
-        mainResult.textContent = 'win'
+        mainResult.textContent = 'you win'
         score++
         localStorage.setItem('value', score)
         scorePoint.textContent = score
         scorePoint.textContent = localStorage.getItem('value')
-        document.querySelector('.ripple').classList.remove('hidden')
-        yourChoice.classList.add('ripple')
-
+        youRipple.classList.remove('hidden')
     }  else if (logoRandom === 'scissor') {
-        document.querySelector('.result__decision--text').textContent ='drew!'
+        mainResult.textContent = 'it\'s a tie!'
     }
     else {
-        mainResult.textContent = 'lose'
+        mainResult.textContent = 'you lose'
         score--
         localStorage.setItem('value', score)
         scorePoint.textContent = score
         scorePoint.textContent = localStorage.getItem('value')
-        document.querySelector('.ripple').classList.remove('hidden')
-        houseChoice.classList.add('ripple')
+        houseRipple.classList.remove('hidden')
     }
     },2000);
     
@@ -88,20 +87,22 @@ paper.addEventListener('click', function () {
 
     setTimeout(function(){    
         if (logoRandom === 'rock') {
-            mainResult.textContent = 'win'
+            mainResult.textContent = 'you win'
             score++
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            youRipple.classList.remove('hidden')
         } else if (logoRandom === 'paper') {
-            document.querySelector('.result__decision--text').textContent ='drew!'
+            mainResult.textContent = 'it\'s a tie!'
         }
         else {
-            mainResult.textContent = 'lose'
+            mainResult.textContent = 'you lose'
             score--
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            houseRipple.classList.remove('hidden')
         }
     },2000);
 
@@ -124,20 +125,22 @@ rock.addEventListener('click', function () {
 
     setTimeout(function(){   
         if (logoRandom === 'lizard') {
-            mainResult.textContent = 'win'
+            mainResult.textContent = 'you win'
             score++
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            youRipple.classList.remove('hidden')
         } else if (logoRandom === 'rock') {
-            document.querySelector('.result__decision--text').textContent ='drew!'
+            mainResult.textContent = 'it\'s a tie!'
         }
         else {
-            mainResult.textContent = 'lose'
+            mainResult.textContent = 'you lose'
             score--
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            houseRipple.classList.remove('hidden')
         } 
     },2000);
 
@@ -160,20 +163,22 @@ lizard.addEventListener('click', function () {
 
     setTimeout(function(){    
         if (logoRandom === 'spock') {
-            mainResult.textContent = 'win'
+            mainResult.textContent = 'you win'
             score++
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            youRipple.classList.remove('hidden')
         } else if (logoRandom === 'lizard') {
-            document.querySelector('.result__decision--text').textContent ='drew!'
+            mainResult.textContent = 'it\'s a tie!'
         }
         else {
-            mainResult.textContent = 'lose'
+            mainResult.textContent = 'you lose'
             score--
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            houseRipple.classList.remove('hidden')
         }
     },2000);
 
@@ -196,20 +201,22 @@ spock.addEventListener('click', function () {
 
     setTimeout(function(){
         if (logoRandom === 'scissor') {
-            mainResult.textContent = 'win'
+            mainResult.textContent = 'you win'
             score++
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            youRipple.classList.remove('hidden')
         } else if (logoRandom === 'spock') {
-            document.querySelector('.result__decision--text').textContent ='drew!'
+            mainResult.textContent = 'it\'s a tie!'
         }
         else {
-            mainResult.textContent = 'lose'
+            mainResult.textContent = 'you lose'
             score--
             localStorage.setItem('value', score)
             scorePoint.textContent = score
             scorePoint.textContent = localStorage.getItem('value')
+            houseRipple.classList.remove('hidden')
         }    
     },2000);
 
