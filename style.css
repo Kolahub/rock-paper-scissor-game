@@ -257,8 +257,8 @@ body {
         height: 40rem; } }
     @media only screen and (max-width: 37.5em) {
       .rippleBg__one {
-        width: 24rem;
-        height: 24rem; } }
+        width: 22rem;
+        height: 22rem; } }
   .rippleBg__two {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -272,8 +272,8 @@ body {
         height: 35rem; } }
     @media only screen and (max-width: 37.5em) {
       .rippleBg__two {
-        width: 21rem;
-        height: 21rem; } }
+        width: 19rem;
+        height: 19rem; } }
   .rippleBg__three {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -287,8 +287,8 @@ body {
         height: 30rem; } }
     @media only screen and (max-width: 37.5em) {
       .rippleBg__three {
-        width: 17rem;
-        height: 17rem; } }
+        width: 16rem;
+        height: 16rem; } }
 
 .rules--component {
   position: absolute;
